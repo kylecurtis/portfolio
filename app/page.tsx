@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Kyle Curtis</h1>
+      <h1 className="text-ctp-text">Kyle Curtis</h1>
     </main>
   )
 }

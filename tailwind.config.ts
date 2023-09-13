@@ -7,14 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@catppuccin/tailwindcss")({
+      // prefix to use, e.g. `text-pink` becomes `text-ctp-pink`.
+      // default is `false`, which means no prefix
+      prefix: "ctp",
+    }),
+  ],
 }
 export default config
