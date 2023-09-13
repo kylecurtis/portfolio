@@ -45,15 +45,8 @@ a:focus {
 /* Standard button styling */
 button {
     padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #666;
 }
 
 /* Responsive image */
@@ -61,6 +54,21 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+pre,
+code {
+    background-color: transparent !important;
+    font-size: 18px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    pre,
+    code {
+        font-size: 15px !important;
+    }
 }
 
 /* Hide visually but keep for screen readers */
