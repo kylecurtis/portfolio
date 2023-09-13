@@ -33,14 +33,12 @@ body {
 
 /* Standard hyperlink styles */
 a {
-    color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover,
 a:focus {
-    color: #0056b3;
     text-decoration: underline;
 }
 
@@ -77,4 +75,3 @@ img {
     white-space: nowrap;
     border: 0;
 }
-
