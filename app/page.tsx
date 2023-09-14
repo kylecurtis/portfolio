@@ -8,6 +8,7 @@ import { Alkatra, Inter } from "next/font/google";
 import Card from "./components/card/Card";
 import Divider from "./components/divider/Divider";
 import Title from "./components/title/Title";
+import CertGrid from "./components/cert-grid/CertGrid";
 
 const alkatra = Alkatra({
   subsets: ["latin"],
@@ -18,7 +19,15 @@ const inter = Inter({
 });
 
 export default function Home() {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
+  const [eduRef, eduInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const [certRef, certInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   return (
     <main className={`${inter.className}`}>
@@ -36,11 +45,17 @@ export default function Home() {
         <Hero />
       </div>
 
+      <div className="m-[100px]"></div>
       <div className="max-w-5xl mx-auto px-[40px]">
-        <Title title="Education"/> 
-        <div ref={ref} className={`opacity-0 ${inView ? "animate-right" : ""}`}>
+        <Title title="Education" />
+        <div
+          ref={eduRef}
+          className={`opacity-0 ${eduInView ? "animate-right" : ""}`}
+        >
           <Card>
-            <p className="text-xl md:text-2xl text-ctp-sky">Associates of Science (A.S)</p>
+            <p className="text-xl md:text-2xl text-ctp-sky">
+              Associates of Science (A.S)
+            </p>
             <p className="text-lg md:text-xl text-ctp-text mt-2">
               Computer Programming and Analysis
             </p>
@@ -48,6 +63,16 @@ export default function Home() {
               <span className="text-ctp-red">Valencia College</span> (Jan 2024)
             </p>
           </Card>
+        </div>
+
+        <Divider />
+
+        <Title title="Certifications" />
+        <div
+          ref={certRef}
+          className={`opacity-0 ${certInView ? "animate-left" : ""}`}
+        >
+          <CertGrid />
         </div>
 
         <Divider />

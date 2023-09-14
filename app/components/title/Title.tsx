@@ -5,7 +5,7 @@ type TitleTypes = {
 const Title = ({ title }: TitleTypes) => {
   return (
     <h2
-      className="font-bold text-3xl md:text-4xl text-center text-ctp-text mt-[150px]"
+      className="font-bold text-3xl md:text-4xl text-center text-ctp-text"
     >
       {title}
     </h2>
