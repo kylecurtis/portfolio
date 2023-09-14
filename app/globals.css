@@ -83,3 +83,18 @@ code {
     white-space: nowrap;
     border: 0;
 }
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px); /* Starts from below 100px */
+    opacity: 0; /* Starts invisible */
+  }
+  100% {
+    transform: translateX(0); /* Ends at its original position */
+    opacity: 1; /* Becomes fully visible */
+  }
+}
+
+.animate-right {
+  animation: slideRight 1s forwards;
+}
