@@ -10,6 +10,7 @@ import Divider from "./components/divider/Divider";
 import Title from "./components/title/Title";
 import CertGrid from "./components/cert-grid/CertGrid";
 import TechGrid from "./components/tech-grid/TechGrid";
+import LearningGrid from "./components/learning-grid/LearningGrid"
 
 const alkatra = Alkatra({
   subsets: ["latin"],
@@ -34,6 +35,12 @@ export default function Home() {
     threshold: 0.0,
     triggerOnce: false,
   });
+  
+  const [learningRef, learningInView] = useInView({
+    threshold: 0.0,
+    triggerOnce: false,
+  });
+
 
   return (
     <main className={`${inter.className}`}>
@@ -87,6 +94,13 @@ export default function Home() {
         
         <div ref={stackRef} className={`opacity-0 ${stackInView ? "animate-up" : ""}`}> 
           <TechGrid />
+        </div>
+
+        <Divider />
+
+        <Title title="📖 What I'm Learning"/>
+        <div ref={learningRef} className={`opacity-0 ${learningInView ? "animate-up" : ""}`}> 
+          <LearningGrid />
         </div>
 
         <Divider />

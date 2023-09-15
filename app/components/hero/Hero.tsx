@@ -98,7 +98,7 @@ const Hero = () => {
                 href={social.url}
               >
                 <button
-                  className={`hover:underline bg-ctp-crust text-ctp-text font-bold border-2 border-ctp-surface1 rounded-2xl p-3 md:p-4 xl:p-4 mr-4`}
+                  className={`hover:underline bg-ctp-crust ${social.color} font-bold border-2 border-ctp-surface1 rounded-2xl p-3 md:p-4 xl:p-4 mr-4`}
                 >
                   <social.icon size={20} />
                 </button>
