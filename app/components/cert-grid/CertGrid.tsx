@@ -1,7 +1,7 @@
 "use client";
 import Card from "../card/Card";
 
-const TechGrid = () => {
+const CertGrid = () => {
   return (
     <>
       <div className="my-8 w-full">
@@ -52,4 +52,4 @@ const TechGrid = () => {
   );
 };
 
-export default TechGrid;
+export default CertGrid;
