@@ -113,3 +113,18 @@ code {
 .animate-left {
   animation: slideLeft 1s forwards;
 }
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-up {
+    animation: slideUp 1s forwards;
+  }

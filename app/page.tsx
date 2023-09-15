@@ -9,6 +9,7 @@ import Card from "./components/card/Card";
 import Divider from "./components/divider/Divider";
 import Title from "./components/title/Title";
 import CertGrid from "./components/cert-grid/CertGrid";
+import TechGrid from "./components/tech-grid/TechGrid";
 
 const alkatra = Alkatra({
   subsets: ["latin"],
@@ -21,12 +22,17 @@ const inter = Inter({
 export default function Home() {
   const [eduRef, eduInView] = useInView({
     threshold: 0.2,
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   const [certRef, certInView] = useInView({
     threshold: 0.2,
-    triggerOnce: true,
+    triggerOnce: false,
+  });
+
+  const [stackRef, stackInView] = useInView({
+    threshold: 0.0,
+    triggerOnce: false,
   });
 
   return (
@@ -47,7 +53,7 @@ export default function Home() {
 
       <div className="m-[100px]"></div>
       <div className="max-w-5xl mx-auto px-[40px]">
-        <Title title="Education" />
+        <Title title="🎓 Education" />
         <div
           ref={eduRef}
           className={`opacity-0 ${eduInView ? "animate-right" : ""}`}
@@ -67,12 +73,20 @@ export default function Home() {
 
         <Divider />
 
-        <Title title="Certifications" />
+        <Title title="🤝 Certifications" />
         <div
           ref={certRef}
           className={`opacity-0 ${certInView ? "animate-left" : ""}`}
         >
           <CertGrid />
+        </div>
+
+        <Divider />
+
+        <Title title="💻 What I'm Using" />
+        
+        <div ref={stackRef} className={`opacity-0 ${stackInView ? "animate-up" : ""}`}> 
+          <TechGrid />
         </div>
 
         <Divider />
