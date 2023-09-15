@@ -60,6 +60,7 @@ export default function Home() {
 
       <div className="m-[100px]"></div>
       <div className="max-w-5xl mx-auto px-[40px]">
+        <span id="education"></span>
         <Title title="🎓 Education" />
         <div
           ref={eduRef}
@@ -80,6 +81,7 @@ export default function Home() {
 
         <Divider />
 
+        <span id="certifications" className="h-[40px]"></span>
         <Title title="🤝 Certifications" />
         <div
           ref={certRef}
@@ -89,7 +91,7 @@ export default function Home() {
         </div>
 
         <Divider />
-
+        <span id="using"></span>
         <Title title="💻 What I'm Using" />
         
         <div ref={stackRef} className={`opacity-0 ${stackInView ? "animate-up" : ""}`}> 
@@ -98,6 +100,7 @@ export default function Home() {
 
         <Divider />
 
+        <span id="learning"></span>
         <Title title="📖 What I'm Learning"/>
         <div ref={learningRef} className={`opacity-0 ${learningInView ? "animate-up" : ""}`}> 
           <LearningGrid />

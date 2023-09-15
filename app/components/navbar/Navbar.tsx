@@ -17,22 +17,22 @@ const Navbar = () => {
       </div>
       <div>
         <Link
-          href="/"
-          scroll={false}
+          href="#education"
+          scroll={true}
           className="text-ctp-text hover:text-[white] ml-5"
         >
           Education
         </Link>
         <Link
-          href="/"
-          scroll={false}
+          href="#certifications"
+          scroll={true}
           className="text-ctp-text hover:text-[white] ml-5"
         >
           Certifications
         </Link>
         <Link
-          href="/"
-          scroll={false}
+          href="#using"
+          scroll={true}
           className="text-ctp-text hover:text-[white] ml-5"
         >
           Stack
