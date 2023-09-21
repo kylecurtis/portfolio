@@ -45,6 +45,7 @@ export default function Home() {
       <div className="relative w-screen h-screen">
         <div className="absolute inset-0 md:flex items-center justify-center z-[-1] ">
           <Image
+            className="!fixed z-[-1]"
             src={Bg}
             alt="test"
             fill
