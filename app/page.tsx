@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Navbar from "./components/navbar/Navbar";
 import Bg from "/public/grid.svg";
-import Hero from "./components/hero/Hero";
+import Hero from "./components/Hero";
 import { useInView } from "react-intersection-observer";
 import { Alkatra, Inter } from "next/font/google";
-import Card from "./components/card/Card";
-import Divider from "./components/divider/Divider";
+import Card from "./components/Card";
+import Divider from "./components/Divider";
 import Title from "./components/title/Title";
-import CertGrid from "./components/cert-grid/CertGrid";
+import CertGrid from "./components/CertGrid";
 import TechGrid from "./components/tech-grid/TechGrid";
 import LearningGrid from "./components/learning-grid/LearningGrid"
 

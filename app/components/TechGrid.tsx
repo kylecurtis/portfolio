@@ -1,7 +1,6 @@
 "use client";
 import { IconType } from "react-icons";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 import {
   SiHtml5,
@@ -10,11 +9,7 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiC,
-  SiRust,
   SiTailwindcss,
-  SiMysql,
-  SiMongodb,
   SiSass,
 } from "react-icons/si";
 

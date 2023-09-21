@@ -1,5 +1,5 @@
 "use client";
-import Card from "../card/Card";
+import Card from "./Card";
 
 const CertGrid = () => {
   return (
