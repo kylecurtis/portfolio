@@ -1,24 +1,22 @@
 "use client";
+
+/* Package Imports */
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Bg from "/public/grid.svg";
-import Hero from "./components/Hero";
 import { useInView } from "react-intersection-observer";
-import { Alkatra, Inter } from "next/font/google";
+import Bg from "/public/grid.svg";
+
+/* Component Imports */
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Divider from "./components/Divider";
 import Title from "./components/Title";
 import CertGrid from "./components/CertGrid";
 import TechGrid from "./components/TechGrid";
-import LearningGrid from "./components/LearningGrid"
+import LearningGrid from "./components/LearningGrid";
 
-const alkatra = Alkatra({
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-});
+/* Font Imports */
+import { inter } from "./fonts";
 
 export default function Home() {
   const [eduRef, eduInView] = useInView({
@@ -35,12 +33,11 @@ export default function Home() {
     threshold: 0.0,
     triggerOnce: false,
   });
-  
+
   const [learningRef, learningInView] = useInView({
     threshold: 0.0,
     triggerOnce: false,
   });
-
 
   return (
     <main className={`${inter.className}`}>
@@ -93,16 +90,22 @@ export default function Home() {
         <Divider />
         <span id="using"></span>
         <Title title="💻 What I'm Using" />
-        
-        <div ref={stackRef} className={`opacity-0 ${stackInView ? "animate-up" : ""}`}> 
+
+        <div
+          ref={stackRef}
+          className={`opacity-0 ${stackInView ? "animate-up" : ""}`}
+        >
           <TechGrid />
         </div>
 
         <Divider />
 
         <span id="learning"></span>
-        <Title title="📖 What I'm Learning"/>
-        <div ref={learningRef} className={`opacity-0 ${learningInView ? "animate-up" : ""}`}> 
+        <Title title="📖 What I'm Learning" />
+        <div
+          ref={learningRef}
+          className={`opacity-0 ${learningInView ? "animate-up" : ""}`}
+        >
           <LearningGrid />
         </div>
 

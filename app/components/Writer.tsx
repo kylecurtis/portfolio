@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { Alkatra } from "next/font/google";
-
-const alkatra = Alkatra({
-  subsets: ["latin"],
-});
+import { alkatra } from "../fonts";
 
 const Writer = () => {
   return (

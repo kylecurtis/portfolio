@@ -1,12 +1,10 @@
-import { Inter } from "next/font/google";
+/* Font Imports */
+import { inter } from "../fonts"; 
 
-const inter = Inter({
-  subsets: ["latin"],
-});
-
+/* Prop Types */
 type CardTypes = {
   children: React.ReactNode;
-}
+};
 
 const Card = ({ children }: CardTypes) => {
   return (

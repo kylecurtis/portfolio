@@ -1,9 +1,5 @@
 import Link from "next/link";
-import { Alkatra } from "next/font/google";
-
-const alkatra = Alkatra({
-  subsets: ["latin"],
-});
+import { alkatra } from "../fonts";
 
 const Navbar = () => {
   return (

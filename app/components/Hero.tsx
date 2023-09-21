@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import Writer from "./Writer";
 
 import {
   FaTwitter,
@@ -13,17 +13,7 @@ import {
   FaAngleDown,
 } from "react-icons/fa";
 
-import { Alkatra } from "next/font/google";
-import { Rubik } from "next/font/google";
-import Writer from "./Writer";
-
-const alkatra = Alkatra({
-  subsets: ["latin"],
-});
-
-const rubik = Rubik({
-  subsets: ["latin"],
-});
+import { alkatra, rubik } from "../fonts";
 
 interface Social {
   title: string;
