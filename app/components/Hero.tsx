@@ -15,7 +15,7 @@ import {
 
 import { Alkatra } from "next/font/google";
 import { Rubik } from "next/font/google";
-import Writer from "./writer/Writer";
+import Writer from "./Writer";
 
 const alkatra = Alkatra({
   subsets: ["latin"],

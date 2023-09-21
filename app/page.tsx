@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar";
 import Bg from "/public/grid.svg";
 import Hero from "./components/Hero";
 import { useInView } from "react-intersection-observer";
 import { Alkatra, Inter } from "next/font/google";
 import Card from "./components/Card";
 import Divider from "./components/Divider";
-import Title from "./components/title/Title";
+import Title from "./components/Title";
 import CertGrid from "./components/CertGrid";
-import TechGrid from "./components/tech-grid/TechGrid";
-import LearningGrid from "./components/learning-grid/LearningGrid"
+import TechGrid from "./components/TechGrid";
+import LearningGrid from "./components/LearningGrid"
 
 const alkatra = Alkatra({
   subsets: ["latin"],
