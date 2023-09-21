@@ -21,22 +21,22 @@ import { inter } from "./fonts";
 export default function Home() {
   const [eduRef, eduInView] = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   const [certRef, certInView] = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   const [stackRef, stackInView] = useInView({
     threshold: 0.0,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   const [learningRef, learningInView] = useInView({
     threshold: 0.0,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (
