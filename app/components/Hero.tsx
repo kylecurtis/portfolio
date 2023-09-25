@@ -61,12 +61,12 @@ const Hero = () => {
 
   return (
     <div className="h-screen w-screen flex items-center text-ctp-text">
-      <div className="flex flex-col items-center xl:flex-row justify-center md:justify-between px-[40px] xl:px-[80px] 2xl:px-[150px] max-w-[2000px] w-full text-center xl:text-left m-auto ">
+      <div className="flex flex-col items-center xl:flex-row justify-center md:justify-between px-[40px] xl:px-[80px] 2xl:px-[150px] max-w-[1600px] w-full text-center xl:text-left m-auto ">
         {/* FIRST DIV */}
-        <div className="flex-1 md:items-start w-full  md:mx-4 p-4 rounded-xl">
-          <p className="text-xl md:text-2xl font-semibold">Hi, my name is</p>
+        <div className="flex-1 md:items-start w-full md:mx-[100px] p-4 rounded-xl">
+          <p className="text-[1.0rem] md:text-[1.5rem] font-semibold">Hi, my name is</p>
           <h1
-            className={`text-5xl md:text-6xl xl:text-8xl mt-4 font-bold ${alkatra.className}`}
+            className={`text-[2.0rem] md:text-[3.0rem] xl:text-[3.5rem] mt-4 font-bold ${alkatra.className}`}
           >
             Kyle Curtis
           </h1>
@@ -79,7 +79,7 @@ const Hero = () => {
             {codeString}
           </SyntaxHighlighter>
 
-          <div className="mt-4">
+          <div className="mt-4 float-right">
             {socials.map((social) => (
               <a
                 key={social.title}

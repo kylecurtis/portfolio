@@ -14,13 +14,13 @@ const EducationDiv = () => {
       className={`opacity-0 ${eduInView ? "animate-right" : ""}`}
     >
       <Card>
-        <p className="text-xl md:text-2xl text-ctp-sky">
+        <p className="text-[1.2rem] text-ctp-sky">
           Associates of Science (A.S)
         </p>
-        <p className="text-lg md:text-xl text-ctp-text mt-2">
+        <p className="text-[1.0rem] text-ctp-text mt-2">
           Computer Programming and Analysis
         </p>
-        <p className="text-lg md:text-xl mt-8">
+        <p className="text-[1.0rem] mt-8">
           <span className="text-ctp-red">Valencia College</span> (Jan 2024)
         </p>
       </Card>

@@ -77,8 +77,8 @@ const TechGrid = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <Icon size={75} />
-                <p className="mt-2 font-bold text-center">{tech.name}</p>
+                <Icon size={60} />
+                <p className="mt-2 font-bold text-center text-[1.0rem]">{tech.name}</p>
               </motion.div>
             );
           })}

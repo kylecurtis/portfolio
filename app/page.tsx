@@ -43,7 +43,7 @@ export default function Home() {
 
         <Divider />
 
-        <span id="certifications" className="h-[40px]"></span>
+        <span id="certifications" ></span>
         <Title title="🤝 Certifications" />
         <CertificationDiv />
 

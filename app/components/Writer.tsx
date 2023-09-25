@@ -6,7 +6,7 @@ import { alkatra } from "../fonts";
 const Writer = () => {
   return (
     <div className={alkatra.className}>
-      <div className="text-lg md:text-2xl xl:text-[40px] text-ctp-text font-bold pl-2 my-4 px-4">
+      <div className="text-[1.0rem] md:text-[1.2rem] xl:text-[1.5rem] text-ctp-text font-bold pl-2 my-4 px-4">
         <Typewriter
           options={{
             strings: [

@@ -4,7 +4,7 @@ import { alkatra } from "../fonts";
 const Navbar = () => {
   return (
     <div className="absolute h-[75px] w-full hidden md:flex justify-between items-center px-8 bg-transparent text-ctp-text top-0 z-[2]">
-      <div className="font-bold flex justify-center text-2xl">
+      <div className="font-bold flex justify-center text-[1.5rem]">
         <div className={alkatra.className}>
           <Link href="/" className="text-ctp-text hover:text-white">
             Kyle Curtis

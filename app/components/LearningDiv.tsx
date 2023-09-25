@@ -10,12 +10,12 @@ const LearningDiv = () => {
 
   return (
     <div
-          ref={learningRef}
-          className={`opacity-0 ${learningInView ? "animate-up" : ""}`}
-        >
-          <LearningGrid />
-        </div>
-  )
-}
+      ref={learningRef}
+      className={`opacity-0 ${learningInView ? "animate-up" : ""}`}
+    >
+      <LearningGrid />
+    </div>
+  );
+};
 
-export default LearningDiv
+export default LearningDiv;
