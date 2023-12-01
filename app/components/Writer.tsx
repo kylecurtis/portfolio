@@ -10,10 +10,13 @@ const Writer = () => {
         <Typewriter
           options={{
             strings: [
-              "Web Designer",
-              "React Developer",
-              "Linux Enthusiast",
-              "Lifelong Student" 
+              "Web Development",
+              "Data Analysis",
+              "Data Visualization",
+              "3D Design & Animation",
+              "Game Development",
+              "Music Production"
+
             ],
             autoStart: true,
             loop: true,
