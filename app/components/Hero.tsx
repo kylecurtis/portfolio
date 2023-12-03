@@ -58,13 +58,7 @@ const Hero = () => {
       self.system = ['Windows', 'Linux']
       self.hard_worker = True
       self.problem_solver = True
-      self.hirable = True
-
-  def __str__(self):
-      return ', \\n'.join(f"{attr.capitalize()}: {getattr(self, attr)}" for attr in self.__dict__)
-
-about_me = About()
-print(about_me)`;
+      self.hirable = True`;
 
   return (
     <div className="h-screen w-screen flex items-center text-ctp-text">
