@@ -50,22 +50,32 @@ const socials: Social[] = [
 ];
 
 const Hero = () => {
-  const codeString = `class About:
-  def __init__(self):
-      self.skills = ['React', 'Git']
-      self.stack = ['TypeScript', 'Python', 'Bash']
-      self.learning = ['C++', 'Rust']
-      self.system = ['Windows', 'Linux']
-      self.hard_worker = True
-      self.problem_solver = True
-      self.hirable = True`;
+  const codeString = `struct About {
+    system: Vec<&'static str>,
+    skills: Vec<&'static str>,
+    stack: Vec<&'static str>,
+    learning: Vec<&'static str>,
+}
+
+impl About {
+    fn new() -> Self {
+        About {
+            system: vec!["Linux", "Windows"],
+            skills: vec!["Git", "ReactJS"],
+            stack: vec!["Bash", "Jupyter", "Python", "Rust", "TypeScript"],
+            learning: vec!["Numpy", "Pandas", "Plotly", "PyTorch"],
+        }
+    }
+}`;
 
   return (
     <div className="h-screen w-screen flex items-center text-ctp-text">
       <div className="flex flex-col items-center xl:flex-row justify-center md:justify-between px-[40px] xl:px-[80px] 2xl:px-[150px] max-w-[1800px] w-full text-center xl:text-left m-auto ">
         {/* FIRST DIV */}
         <div className="flex-1 md:items-start w-full md:mx-[50px] p-4 rounded-xl">
-          <p className="text-[1.4rem] md:text-[1.5rem] font-semibold mt-10">Hi, my name is</p>
+          <p className="text-[1.4rem] md:text-[1.5rem] font-semibold mt-10">
+            Hi, my name is
+          </p>
           <h1
             className={`text-[3.0rem] md:text-[3.0rem] xl:text-[4.5rem] mt-4 font-bold ${alkatra.className}`}
           >
@@ -76,7 +86,7 @@ const Hero = () => {
 
         {/* SECOND DIV */}
         <div className="w-full xl:w-1/2 md:mx-4 p-4 rounded-xl text-xl bg-ctp-base border-2 border-ctp-surface0">
-          <SyntaxHighlighter language="python" style={vscDarkPlus}>
+          <SyntaxHighlighter language="rust" style={vscDarkPlus}>
             {codeString}
           </SyntaxHighlighter>
 
